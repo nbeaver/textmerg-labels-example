@@ -85,4 +85,6 @@ Unfortunately, the formatting has been disturbed in the switch. In particular, t
 
 <!-- TODO: add comparison -->
 
-How can I get back the original dimensions?
+The original is in black, the second in red.
+
+How can I iterate over an external file while keeping the original dimensions?
