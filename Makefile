@@ -2,11 +2,13 @@
 
 LATEX    :=$(wildcard *.tex)
 PDF      :=$(patsubst %.tex,%.pdf, $(LATEX))
+DAT      :=$(patsubst %.tex,%.dat, $(LATEX))
 MARKDOWN :=$(patsubst %.tex,%.markdown,  $(LATEX))
 PNG      :=$(patsubst %.pdf,%.png, $(PDF))
+MOREPNG  :=example-2-red.png composite.png comparison.png
 ZIP      :=simple.zip
 
-all : $(PNG) comparison.png $(PDF) $(MARKDOWN)
+all : $(PNG) $(MOREPNG) $(PDF) $(MARKDOWN)
 	xsel -b < post.md
 
 %.pdf : %.tex
@@ -36,4 +38,4 @@ wordcount : $(LATEX)
 
 clean :
 	latexmk -C
-	rm -f -- $(ZIP) $(PNG) $(MARKDOWN) comparison.png example.dat
+	rm -f -- $(ZIP) $(PNG) $(MOREPNG) $(MARKDOWN) $(DAT)
