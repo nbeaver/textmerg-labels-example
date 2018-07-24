@@ -85,10 +85,13 @@ Unfortunately, the formatting has been disturbed in the switch. In particular, w
 
 Here is a comparison of the two:
 
-<!-- TODO: add comparison -->
+[![labels overlaid, red not matching black][1]][1]
 
 The original is in black, the second in red.
 
 How can I iterate over an external file while keeping the original dimensions?
 
 (If there is a way to use `textmerg` for this, I would be fine with that, but a method with, say, `datatool` or `catchfile` would be fine too.)
+
+
+  [1]: https://i.stack.imgur.com/uJQFr.png
