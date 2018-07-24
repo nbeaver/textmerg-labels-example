@@ -93,5 +93,9 @@ How can I iterate over an external file while keeping the original dimensions?
 
 (If there is a way to use `textmerg` for this, I would be fine with that, but a method with, say, `datatool` or `catchfile` would be fine too.)
 
+Here is a link to a Github repo to try it yourself if you're curious:
+
+https://github.com/nbeaver/textmerg-labels-example
+
 
   [1]: https://i.stack.imgur.com/uJQFr.png
