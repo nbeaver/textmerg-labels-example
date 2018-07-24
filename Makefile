@@ -1,4 +1,4 @@
-.PHONY: all clean wordcount
+.PHONY: all clean
 
 LATEX    :=$(wildcard *.tex)
 PDF      :=$(patsubst %.tex,%.pdf, $(LATEX))
@@ -32,9 +32,6 @@ comparison.png : composite.png Makefile
 
 $(ZIP) : Makefile $(LATEX) .gitignore
 	zip $@ $^
-
-wordcount : $(LATEX)
-	texcount $(LATEX)
 
 clean :
 	latexmk -C
