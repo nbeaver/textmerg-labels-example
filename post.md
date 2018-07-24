@@ -81,7 +81,7 @@ Rather than manually writing all the labels in the body of the document, I wante
     
     \end{document}
 
-Unfortunately, the formatting has been disturbed in the switch. In particular, the column spacing is about 9.5 mm instead of 8 mm. This is a serious problem when printing onto sticky labels.
+Unfortunately, the formatting has been disturbed in the switch. In particular, when I measure the column spacing with the Measure tool in Adobe Acrobat Reader DC, it comes to about 9.5 mm instead of 8 mm. This is a serious problem when printing onto sticky labels.
 
 Here is a comparison of the two:
 
@@ -90,3 +90,5 @@ Here is a comparison of the two:
 The original is in black, the second in red.
 
 How can I iterate over an external file while keeping the original dimensions?
+
+(If there is a way to use `textmerg` for this, I would be fine with that, but a method with, say, `datatool` or `catchfile` would be fine too.)
