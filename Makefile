@@ -23,9 +23,8 @@ all : $(PNG) $(MOREPNG) $(PDF) $(MARKDOWN)
 example-2-red.png : example-2.png Makefile
 	convert $< -fuzz '50%' -fill red -opaque black $@
 
-.PHONY : composite.png
-composite.png : example-1.png example-2-red.png
-	convert -composite $^ $@
+composite.png : example-1.png example-2-red.png Makefile
+	convert -composite example-1.png example-2-red.png $@
 
 comparison.png : composite.png Makefile
 	convert -background white -alpha remove $< $@
