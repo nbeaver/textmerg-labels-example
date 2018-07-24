@@ -6,7 +6,7 @@ MARKDOWN :=$(patsubst %.tex,%.markdown,  $(LATEX))
 PNG      :=$(patsubst %.pdf,%.png, $(PDF))
 ZIP      :=simple.zip
 
-all : $(PNG) $(PDF) $(MARKDOWN)
+all : $(PNG) comparison.png $(PDF) $(MARKDOWN)
 	xsel -b < post.md
 
 %.pdf : %.tex
@@ -16,7 +16,17 @@ all : $(PNG) $(PDF) $(MARKDOWN)
 	sed 's/^/    /' $< > $@
 
 %.png : %.pdf
-	convert -density 300 $< -quality 90 -flatten $@
+	convert -transparent white -density 300 $< -quality 90 $@
+
+example-2-red.png : example-2.png Makefile
+	convert $< -fuzz '50%' -fill red -opaque black $@
+
+.PHONY : composite.png
+composite.png : example-1.png example-2-red.png
+	convert -composite $^ $@
+
+comparison.png : composite.png Makefile
+	convert -background white -alpha remove $< $@
 
 $(ZIP) : Makefile $(LATEX) .gitignore
 	zip $@ $^
@@ -26,4 +36,4 @@ wordcount : $(LATEX)
 
 clean :
 	latexmk -C
-	rm -f -- $(ZIP) $(PNG) $(MARKDOWN) example.dat
+	rm -f -- $(ZIP) $(PNG) $(MARKDOWN) comparison.png example.dat
