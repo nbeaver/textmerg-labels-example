@@ -81,8 +81,7 @@ Rather than manually writing all the labels in the body of the document, I wante
     
     \end{document}
 
-Unfortunately, the formatting has been disturbed in the switch.
-Here is a comparison of the two:
+Unfortunately, the formatting has been disturbed in the switch. In particular, the column spacing is larger. Here is a comparison of the two:
 
 <!-- TODO: add comparison -->
 
