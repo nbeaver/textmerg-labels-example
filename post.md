@@ -1,7 +1,7 @@
 I am making a sheet of address labels.
 Here is my first iteration:
 
-    \documentclass[letter,12pt]{article}
+    \documentclass[letterpaper,12pt]{article}
     
     \usepackage[newdimens]{labels}
     \LabelCols=4
@@ -38,7 +38,7 @@ Rather than manually writing all the labels in the body of the document, I wante
 [other](https://tex.stackexchange.com/questions/210885/how-to-print-addresses/)
 [questions](https://tex.stackexchange.com/questions/256928/is-it-possible-to-add-dynamic-content/).
 
-    \documentclass[letter,12pt]{article}
+    \documentclass[letterpaper,12pt]{article}
     
     \usepackage{textmerg}
     
