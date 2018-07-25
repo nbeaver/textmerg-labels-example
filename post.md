@@ -30,6 +30,46 @@ Here is my first iteration:
     C
     
     D
+    
+    E
+    
+    F
+    
+    G
+    
+    H
+    
+    I
+    
+    J
+    
+    K
+    
+    L
+    
+    M
+    
+    N
+    
+    O
+    
+    P
+    
+    Q
+    
+    R
+    
+    S
+    
+    T
+    
+    U
+    
+    V
+    
+    W
+    
+    X
     \end{labels}
     
     \end{document}
@@ -66,6 +106,26 @@ Rather than manually writing all the labels in the body of the document, I wante
     B
     C
     D
+    E
+    F
+    G
+    H
+    I
+    J
+    K
+    L
+    M
+    N
+    O
+    P
+    Q
+    R
+    S
+    T
+    U
+    V
+    W
+    X
     \end{filecontents*}
     
     \begin{document}
@@ -98,4 +158,4 @@ Here is a link to a Github repo to try it yourself if you're curious:
 https://github.com/nbeaver/textmerg-labels-example
 
 
-  [1]: https://i.stack.imgur.com/uJQFr.png
+  [2]: https://i.stack.imgur.com/uJQFr.png
