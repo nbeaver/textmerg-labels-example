@@ -48,6 +48,19 @@ W
 X
 \end{filecontents*}
 
+\def\ParseFields#1{%
+   \ifx#1\EndParseFields
+      \let\NextParse\relax
+   \else
+      \let\NextParse\ParseFields
+      \ifx#1+\DontAllowBlank
+      \else
+         \ifx#1-\AllowBlank
+         \else\ReadIn#1% <= remove space here
+         \fi
+      \fi
+   \fi\NextParse}
+
 \begin{document}
 \Fields{\mylabel}%
 \Merge{\jobname.dat}{%
