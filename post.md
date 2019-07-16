@@ -157,4 +157,6 @@ Here is a link to a Github repo to try it yourself if you're curious:
 
 https://github.com/nbeaver/textmerg-labels-example
 
+**Edit:** pull request has been [submitted](https://github.com/rf-latex/textmerg/pull/1) and [accepted](https://github.com/rf-latex/textmerg/commit/615c8d390b5d5462ca37e54173d1943d8f3db83a).
+
   [1]: https://i.stack.imgur.com/emIuR.png
