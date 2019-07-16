@@ -157,5 +157,4 @@ Here is a link to a Github repo to try it yourself if you're curious:
 
 https://github.com/nbeaver/textmerg-labels-example
 
-
-  [2]: https://i.stack.imgur.com/uJQFr.png
+  [1]: https://i.stack.imgur.com/emIuR.png
